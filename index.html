@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atrapa al topo!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Atrapa al <span class="player-name">sapo</span>!</h1>
+        <div class="game-info">
+            <div class="score">Puntos: <span id="score">0</span></div>
+            <div class="time">Tiempo: <span id="time">30</span>s</div>
+        </div>
+        
+        <div class="game-board" id="gameBoard">
+            <!-- Los agujeros se generan dinámicamente con JS -->
+        </div>
+        
+        <div class="controls">
+            <button id="startBtn" class="btn">Comenzar</button>
+            <button id="resetBtn" class="btn">Reiniciar</button>
+        </div>
+        
+        <div class="message" id="message"></div>
+    </div>
+    
+    <audio id="popSound" src="assets/sounds/pop.mp3" preload="auto"></audio>
+    <audio id="laughSound" src="assets/sounds/laugh.mp3" preload="auto"></audio>
+    
+    <script src="game.js"></script>
+</body>
+</html>
